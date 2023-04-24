@@ -1,0 +1,23 @@
+spring:
+    datasource:
+      url: jdbc:h2:mem:testdb
+      driverClassName: org.h2.Driver
+      username: sa
+      password:
+    jpa:
+#      show-sql: true
+      hibernate:
+        ddl-auto: update
+    h2:
+      console:
+        enabled: true
+        path: /h2-ui
+
+api:
+    baseUrl: /api
+
+urls:
+    sessionInviteLink: http://example.com/api/session/%s/join/
+    sessionDestroyConfirmationPage: http://example.com/api/confirmationPage/
+
+
